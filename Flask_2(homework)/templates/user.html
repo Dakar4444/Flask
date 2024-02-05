@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+{% if username %}
+<div class=" container">
+  <div class="row">
+      <div class = "col12">
+        <p>Привет {{username}}</p> 
+      </div>
+  </div>
+</div>
+<div class=" container">
+  <div class="row">
+      <div class = "col12">
+        <form method="post">
+          <button type="submit" class="btn btn-primary" value="sumbit_button" name="logout">Выход</button>
+        </form>
+      </div>
+  </div>
+</div>
+{% else  %}
+{% endif %}
+{% endblock %}
